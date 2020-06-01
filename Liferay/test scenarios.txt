@@ -1,0 +1,9 @@
+1. The text "party rock" must be present in the form
+a ) GIVEN language set to English WHEN I look on the first page THEN I can find words: party rock
+b ) GIVEN language set to Portugese WHEN I look on the first page THEN I can find words: party rock
+2. All fields must be mandatory and contain an error message if they are not filled;
+a) GIVEN all fields empty WHEN I clik Submit button THEN I can see the validation messages for all fields
+b) GIVEN all fields are empty WHEN I type spaces to the Name box AND type spaces to the "Why did you join box" AND click outside the box THEN the validation will be present
+c) GIVEN all fields are empty WHEN I provide text to the Name field OR "Why did you join box" OR provide the date to the Date of birth box AND remove it AND click outside the box THEN the validation message appears
+3. A successful message should appear after the form has been successfully submitted.
+a) GIVEN all fields funfilled on the first page WHEN I click submit THEN I am redirected to the second page AND I can see the successful message

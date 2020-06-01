@@ -1,0 +1,40 @@
+1. Coverage
+Automation test will cover 3 requirements and found bugs during the manual tests which affected the required scenarios.
+2. What will be tested
+-all scenarios to reach the requirement listed on this task
+-validations of presence of required elements
+- every found bug which break the scenario of complete the required task
+3. What will not be tested
+-assertion of every element of the page
+-data picker
+-bugs which were found during the manual tests but are not related to the required tasks
+-load tests for the text boxes. Load tests by putting big amount of the text and see the result
+-veryfication if any single sign in the textboxes is not treated as empty
+-portugese version of required tasks. Portugese language is only included in the first required task: Party Rock
+4. Environments and instalation
+To download:
+Chrome Driver - https://chromedriver.chromium.org/downloads
+Selenium Java v3.8.1, apache maven 3.5.2 - https://selenium.dev/downloads/
+jdk 11.0.1 - https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
+Spring Tool Suite - https://spring.io/blog/2017/12/22/spring-tool-suite-3-9-2-released
+Libraries:
+JUnit 3.8.1 -4.1.2
+Maven Dependencies
+How to set up the environment:
+ https://www.edureka.co/blog/selenium-installation/
+
+In the Generic class in System.setProperty:
+@Before
+	public void setup() throws MalformedURLException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Programowanie\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://forms.liferay.com/web/forms/shared/-/form/122548");
+		logger.info("WebDriver used: " + driver);
+		driver.manage().window().maximize();
+		}
+change  C:\\Programowanie\\chromedriver.exe to the path were you downloaded and unpacked the Chrome Driver
+5. Test descriptions
+Every test class is named by the required task to funfill. Inside particular class, name of the class inform which test scenario is realized. 
+ BDD comments could be put there.
+6. Risk
+On purpose was used 'sleep' method. I am awared that will be pointed by you as disadvantage but I considered that in this place where is used neccessary as is difficult to use 'wait' method

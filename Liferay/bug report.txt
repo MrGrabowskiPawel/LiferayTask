@@ -1,0 +1,85 @@
+Found bugs:
+
+1. No validation for empty Name field.
+Description
+It is possible to leave empty Name field and will be no validation for it.
+Steps to reproduce:
+I. type text into the Name box
+II. highlight whole text
+III. press delete and in the same time click on the calendar
+Expected result
+validation message that the Name field is empty
+Actual result
+no validation message
+
+2. No validation for empty 'Why did you join' field.
+Description
+It is possible to leave empty 'Why did you join' field and will be no validation for it.
+Steps to reproduce:
+I. type text into the 'Why did you join' box
+II. highlight whole text
+III. press delete and in the same time click on the calendar
+Expected result
+validation message that the 'Why did you join' field is empty
+Actual result
+no validation message
+
+
+3. Validation when birth date is set for today
+Description
+When data is set for today, validation is run apart that the field is not empty
+Steps to reproduce:
+I. click on the 'today' button from the datapicker
+II. click outside the frame
+Expected result
+no validation
+Actual result
+ validation message about the empty field
+
+4. Validation message for non-empty Name field.
+Description
+It is possible to leave non-empty Name  field and will be validation for it.
+Steps to reproduce:
+I. type text into the Name box
+II. click outside the box outside the box as fast as you can
+Expected result
+no validation message 
+Actual result
+validation message that that the Name field is empty
+
+ 5. Validation message for 'Why did you join' field.
+Description
+It is possible to leave non-empty 'Why did you join' field and will be validation for it.
+Steps to reproduce:
+I. type text into the 'Why did you join' box
+II. click outside the box outside the box as fast as you can
+Expected result
+no validation message
+Actual result
+validation message that the 'Why did you join' field is empty
+
+		Bugs found but not related to the task in consequence - not automated
+1a. Possible to choose the Date of Birth from the future
+Description
+It is possible to choose the Date of Birth from the future
+Steps to reproduce:
+I. click on the datapicker in the DoB field
+II. choose the date from the future
+III. click outside the box
+Expected result
+ validation message if user tries to type date from the future
+grayed out fields not possible to click 
+Actual result
+future date is allowed
+
+2a. Possible to set only one number in the Date of Birth
+Description
+It is possible to set only one number and leave the rest fields empty
+Steps to reproduce:
+I. click on the DoB field
+II. type one number
+III. click outside the box
+Expected result
+ validation message 
+Actual result
+no validation

@@ -1,0 +1,8 @@
+All requirements:
+-The text "party rock" must be present in the form;
+ -All fields must be mandatory and contain an error message if they are not filled; 
+-A successful message should appear after the form has been successfully submitted.
+were able to described by automations tests and successfuly called. 
+In total 7 bugs were found.
+5 of them are related to the above requirements and were included into the project.
+2 are only in the bug report

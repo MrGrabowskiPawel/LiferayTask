@@ -1,0 +1,9 @@
+Test automation strategy
+1. Goals
+a) automate all 3 required tasks
+b) automate tasks that can failure the requirements
+c) automate tests with clear pass/fail result
+2. Test approach
+This is a broader term to define; hence, it can be broken into three parts: process, roles, and technology. This includes what tests to automate and the decision of when the test cases should be developed during the sprints.
+3. Execution
+False outcomes and test fails are only in the Bugs class
